@@ -12,7 +12,7 @@ const getData = (url) => {
 const cars = (data) => {
     data.cars.forEach(element => {
         if (element.brand === selectedCar.value) {
-            //Диструктурирующее присваивание, когда свойства обьекта/значения массива распаковываются в отд.переменные
+            //Диструктурирующее присваивание,свойства обьекта распаковываются в отд.переменные
             let {brand, model, price} = element;
 
             output.textContent = `Тачка ${brand} ${model}`;
